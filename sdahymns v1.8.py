@@ -488,4 +488,6 @@ root.bind("<Up>", select_previous_result)
 root.bind("<Down>", select_next_result)
 
 search_files()
+#to display hymns as you open the app
+
 root.mainloop()
