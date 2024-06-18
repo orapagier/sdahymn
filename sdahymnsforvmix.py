@@ -58,7 +58,7 @@ def open_selected(event):
             
 def update_background():
     global resized_bg_image
-    bg_image = Image.open(r"Data\bg.png")  # Replace with your image file path
+    bg_image = Image.open(r"_internal/Data\bg.png")  # Replace with your image file path
     resized_bg_image = bg_image.resize((root.winfo_width(), root.winfo_height()), Image.LANCZOS)
     bg_image_tk = ImageTk.PhotoImage(resized_bg_image)
     background_label.config(image=bg_image_tk)
@@ -269,7 +269,7 @@ root = tk.Tk()
 root.title("Seventh Day Adventist Church Hymnal")
 
 # Load the image file and convert it to a PhotoImage object
-icon_image = Image.open("Data/favicon.ico")
+icon_image = Image.open("_internal/Data/favicon.ico")
 icon_photo = ImageTk.PhotoImage(icon_image)
 root.winfo_toplevel().iconphoto(True, icon_photo)
 
